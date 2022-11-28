@@ -2,6 +2,8 @@ import React from "react";
 
 import "./styles.scss";
 
+import DepositionCard from "../deposition_card";
+
 const DepositionsSection: React.FC = () => {
   return (
     <section className="depositions">
@@ -16,45 +18,24 @@ const DepositionsSection: React.FC = () => {
         </span>
       </div>
       <div className="depositions_comment">
-        <div className="depositions_card">
-          <div className="ico">
-            <img src="/public/ico.png" alt="" />
-          </div>
-          <span>lorem impsu lorem impsu</span>
-          <div className="deposition_author">
-            <img src="#" alt="avatar" />
-            <div className="author_details">
-              <p>Timsom K.</p>
-              <span>Product Manager</span>
-            </div>
-          </div>
-        </div>
-        <div className="depositions_card">
-          <div className="ico">
-            <img src="/public/ico.png" alt="" />
-          </div>
-          <span>lorem impsu lorem impsu</span>
-          <div className="deposition_author">
-            <img src="#" alt="avatar" />
-            <div className="author_details">
-              <p>Timsom K.</p>
-              <span>Product Manager</span>
-            </div>
-          </div>
-        </div>
-        <div className="depositions_card">
-          <div className="ico">
-            <img src="/public/ico.png" alt="" />
-          </div>
-          <span>lorem impsu lorem impsu</span>
-          <div className="deposition_author">
-            <img src="#" alt="avatar" />
-            <div className="author_details">
-              <p>Timsom K.</p>
-              <span>Product Manager</span>
-            </div>
-          </div>
-        </div>
+        <DepositionCard
+          comment="Plataforma inovadora."
+          avatarURL="https://www.eskolare.com/images/illustrations/avatars/woman-2.svg"
+          author="Soraia G."
+          employer="Product Manager"
+        />
+        <DepositionCard
+          comment="Top demais! gostei!"
+          avatarURL="https://www.eskolare.com/images/illustrations/avatars/woman-1.svg"
+          author="Raquel K."
+          employer="Product Manager"
+        />
+        <DepositionCard
+          comment="Vou usar sempre!"
+          avatarURL="https://www.eskolare.com/images/illustrations/avatars/woman-4.svg"
+          author="Rogerio S."
+          employer="Product Manager"
+        />
       </div>
     </section>
   );
