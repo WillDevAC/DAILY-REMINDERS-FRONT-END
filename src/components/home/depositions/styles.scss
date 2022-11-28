@@ -1,0 +1,90 @@
+.depositions {
+    display: grid;
+    background-color: white;
+    margin-top: 3%;
+    grid-template-columns: 1fr;
+
+    .depositions_img{
+        display: flex;
+        width: 100%;
+        align-items: center;
+        justify-content: center;
+        padding-top: 3%;
+        flex-direction: column;
+
+        img {
+            width: 15%;
+            padding-bottom: 1%;
+        }
+
+        h1{
+            font-size: 1.7rem;
+            b{
+                padding-top: 5%;
+                color: #0aadff;
+            }
+        }
+
+        span {
+            padding-top: 1%;
+            color: #728197;
+            font-size: 1.12rem;
+        }
+    }
+
+    .depositions_comment {
+        padding-top: 3%;
+        padding-left: 10%;
+        padding-right: 10%;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 0.5rem;
+
+        .depositions_card{
+            display: flex;
+            border-radius: 0.2rem;
+            border: 1px solid #e0e0e0;;
+            flex-direction: column;
+
+            .ico {
+                display: flex;
+                width: 100%;
+                align-items: center;
+                justify-content: center;
+                min-height: 5rem;
+                padding-top: 10%;
+
+                img{
+                    width: 25%;
+                }
+            }
+
+            span{
+                padding-top: 10%;
+                text-align: center;
+            }
+
+            .deposition_author{
+                display: flex;
+                padding-top: 10%;
+                justify-content: center;
+                align-items: center;
+                gap: 1rem;
+
+                .author_details{
+                    display: flex;
+                    flex-direction: column;
+
+                    span {
+                        color: #728197;
+                    }
+                }
+
+            }
+
+        }
+        
+        
+    }
+
+}
