@@ -33,7 +33,7 @@ const DepositionsSection: React.FC = () => {
         <DepositionCard
           comment="Vou usar sempre!"
           avatarURL="https://www.eskolare.com/images/illustrations/avatars/woman-4.svg"
-          author="Rogerio S."
+          author="Angela S."
           employer="Product Manager"
         />
       </div>

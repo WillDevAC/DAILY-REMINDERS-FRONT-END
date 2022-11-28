@@ -1,6 +1,6 @@
 import React from "react";
 
-import MoreInfoCard from "../card";
+import MoreInfoCard from "../marketing-card";
 
 import "./styles.scss";
 
