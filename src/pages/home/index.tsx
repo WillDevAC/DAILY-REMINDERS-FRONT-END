@@ -2,11 +2,11 @@ import React from "react";
 
 import Header from "../../components/home/header";
 
-import Depositions from "../../components/home/depositions";
-import Marketing from "../../components/home/marketing";
-import Support from "../../components/home/support";
-import Cookies from "../../components/home/cookies";
-import Newsletter from "../../components/home/newsletter";
+import Depositions from "../../components/home/depositions-section";
+import Marketing from "../../components/home/marketing-section";
+import Support from "../../components/home/support-section";
+import Cookies from "../../components/home/cookies-popover";
+import Newsletter from "../../components/home/newsletter-section";
 
 import Footer from "../../components/home/footer";
 
