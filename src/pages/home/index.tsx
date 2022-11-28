@@ -16,6 +16,7 @@ const Home: React.FC = () => {
         <MarketingSection />
         <SupportSection />
       </main>
+      <CookiesModal/>
     </>
   );
 };
