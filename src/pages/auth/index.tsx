@@ -36,6 +36,10 @@ const Auth: React.FC = () => {
           <div className="form-group">
             <input type="password" placeholder="Senha" />
           </div>
+          <div className="form-groups">
+            <span>Não tem uma conta?</span>
+            <button className="blue">Entrar</button>
+          </div>
         </div>
         <div className="avatar">
           <img

@@ -43,6 +43,19 @@
         grid-template-columns: 1fr 1fr;
         gap: 1rem;
         padding-top: 5%;
+        
+        span {
+          font-size: 0.85rem;
+          display: flex;
+          padding-top: 8%;
+          cursor: pointer;
+
+          &:hover{
+            color: #0aadff;
+          }
+
+        }
+
       }
 
       button {
@@ -57,6 +70,17 @@
 
         &:hover {
           background-color: #fafafa;
+        }
+      }
+      
+      .blue {
+        background-color: #0aadff;
+        color: white;
+        font-weight: bold;
+        border-radius: 0.2rem;
+
+        &:hover{
+          background-color: #097fba;
         }
       }
 
