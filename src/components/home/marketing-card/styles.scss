@@ -1,72 +1,66 @@
 .card {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    background-color: white;
-    flex: 1;
-    margin-top: 2rem;
-    border-radius: 16px;
-    gap: 3rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: white;
+  flex: 1;
+  margin-top: 2rem;
+  border-radius: 16px;
+  gap: 3rem;
 
-    i{
-        padding-top: 15%;
-        padding-bottom: 15%;
-        font-size: 2.7rem;
-    }
+  i {
+    padding-top: 15%;
+    padding-bottom: 15%;
+    font-size: 2.7rem;
+  }
 
-    h3{
-        font-size: 1.1rem;
-        color: #474f5e;
-
-        @media screen and (max-width: 480px) {
-            font-size: 1.5rem;
-        }
-
-    }
-
-    p{
-        text-align: center;
-        color: #afb7c4;
-        font-size: 1rem;
-        padding-bottom: 1.5rem;
-        width: 90%;
-
-        @media screen and (max-width: 480px) {
-            font-size: 1.5rem;
-        }
-
-    }
+  h3 {
+    font-size: 1.1rem;
+    color: #474f5e;
 
     @media screen and (max-width: 480px) {
-       gap: 0.5rem;
+      font-size: 1.5rem;
     }
+  }
 
+  p {
+    text-align: center;
+    color: #afb7c4;
+    font-size: 1rem;
+    padding-bottom: 1.5rem;
+    width: 90%;
+
+    @media screen and (max-width: 480px) {
+      font-size: 1.5rem;
+    }
+  }
+
+  @media screen and (max-width: 480px) {
+    gap: 0.5rem;
+  }
 }
 
 .card:nth-child(1) {
-    border-top: 0.6rem solid #de5857;
+  border-top: 0.6rem solid #de5857;
 
-    i{
-        color: #de5857;
-    }
+  i {
+    color: #de5857;
+  }
 }
 
 .card:nth-child(2) {
-    border-top: 0.6rem solid #0aafff;
+  border-top: 0.6rem solid #0aafff;
 
-    i{
-        color: #0aafff;
-    }
-
+  i {
+    color: #0aafff;
+  }
 }
 
 .card:nth-child(3) {
-    border-top: 0.6rem solid #f7c13e;
+  border-top: 0.6rem solid #f7c13e;
 
-    i{
-        color: #f7c13e;
-    }
-
+  i {
+    color: #f7c13e;
+  }
 }
-

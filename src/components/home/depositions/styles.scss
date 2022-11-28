@@ -1,70 +1,67 @@
 .depositions {
+  display: grid;
+  background-color: white;
+  margin-top: 3%;
+  grid-template-columns: 1fr;
+
+  .depositions_img {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    padding-top: 3%;
+    flex-direction: column;
+
+    img {
+      width: 15%;
+      padding-bottom: 1%;
+
+      @media screen and (max-width: 480px) {
+        width: 30%;
+        padding-top: 3%;
+      }
+    }
+
+    h1 {
+      font-size: 1.7rem;
+
+      @media screen and (max-width: 480px) {
+        padding-top: 2%;
+        text-align: center;
+      }
+
+      b {
+        padding-top: 5%;
+        color: #0aadff;
+      }
+    }
+
+    span {
+      padding-top: 1%;
+      color: #728197;
+      font-size: 1.12rem;
+
+      @media screen and (max-width: 480px) {
+        text-align: center;
+        padding-top: 3%;
+        padding-bottom: 3%;
+      }
+    }
+  }
+
+  .depositions_comment {
+    padding-top: 3%;
+    padding-left: 10%;
+    padding-right: 10%;
     display: grid;
-    background-color: white;
-    margin-top: 3%;
-    grid-template-columns: 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 0.5rem;
+    padding-bottom: 2%;
 
-    .depositions_img{
-        display: flex;
-        width: 100%;
-        align-items: center;
-        justify-content: center;
-        padding-top: 3%;
-        flex-direction: column;
-
-        img {
-            width: 15%;
-            padding-bottom: 1%;
-            
-            @media screen and (max-width: 480px) {
-                width: 30%;
-                padding-top: 3%;
-            }
-
-        }
-
-        h1{
-            font-size: 1.7rem;
-
-            @media screen and (max-width: 480px) {
-                padding-top: 2%;
-                text-align: center;
-            }
-
-            b{
-                padding-top: 5%;
-                color: #0aadff;
-            }
-        }
-
-        span {
-            padding-top: 1%;
-            color: #728197;
-            font-size: 1.12rem;
-
-            @media screen and (max-width: 480px) {
-                text-align: center;
-                padding-top: 3%;
-                padding-bottom: 3%;
-            }
-        }
+    @media screen and (max-width: 480px) {
+      grid-template-columns: 1fr;
+      padding-left: 0%;
+      padding-right: 0%;
     }
-
-    .depositions_comment {
-        padding-top: 3%;
-        padding-left: 10%;
-        padding-right: 10%;
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
-        gap: 0.5rem;
-        padding-bottom: 2%;   
-        
-        @media screen and (max-width: 480px) {
-            grid-template-columns: 1fr;    
-            padding-left: 0%;
-            padding-right: 0%;
-        }
-
-    }
-
+  }
 }
