@@ -1,8 +1,13 @@
-import React from "react";
+import React, { useState } from "react";
 
 import './styles.scss'
 
+import {useHistory} from 'react-router-dom';
+
 const Header: React.FC = () => {
+
+  const router = useHistory();
+
   return (
     <>
       <header className="_header">
@@ -10,7 +15,7 @@ const Header: React.FC = () => {
           <img src="/public/logo.png" alt="Logo" />
         </div>
         <div className="links">
-          <button>Começar agora</button>
+          <button onClick={() => router.push('/auth')}>Começar agora</button>
         </div>
       </header>
     </>
