@@ -1,9 +1,9 @@
 import React from "react";
 
-import "./styles.scss";
-
 import Header from "../../components/home/header";
 import MarketingSection from "../../components/home/marketing";
+
+import "./styles.scss";
 
 const Home: React.FC = () => {
   return (
