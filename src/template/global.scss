@@ -20,12 +20,17 @@ button {
   border: none;
 }
 
-@keyframes flash {
-  0%,
-  100% {
-    opacity: 1;
+#typograph:after {
+  content: "|";
+  opacity: 1;
+  animation: flash 0.7s infinite;
+}
+
+@keyframes flash{
+  0%, 100%{
+      opacity: 1;
   }
-  50% {
-    opacity: 0;
+  50%{
+      opacity: 0;
   }
 }

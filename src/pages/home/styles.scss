@@ -1,0 +1,16 @@
+._main {
+  padding-top: 3%;
+  padding-left: 11%;
+  padding-right: 11%;
+
+  @media screen and (max-width: 480px) {
+    padding-top: 5%;
+    padding-left: 4%;
+    padding-right: 4%;
+  }
+
+  @media screen and (max-width: 912px) {
+    padding-left: 4%;
+    padding-right: 4%;
+  }
+}

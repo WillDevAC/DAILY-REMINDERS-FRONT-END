@@ -1,0 +1,58 @@
+@import "../../../template/global.scss";
+
+.marketing {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+
+  .headline {
+    display: flex;
+    flex-direction: column;
+
+    h1 {
+      color: $brand-font-color;
+      font-size: calc(2.8em + 1.1vw);
+      text-align: start;
+      width: 100%;
+      
+      @media screen and (max-width: 480px) {
+        font-size: 2.3em;
+      }
+
+      @media screen and (max-width: 1300px) {
+        font-size: 3.3em;
+      }
+
+    }
+
+    span {
+      color: #718096;
+      padding-top: 6%;
+      font-size: 1.3rem;
+      width: 94%;
+    }
+
+    b {
+      color: $primary-color;
+    }
+  }
+
+  .banner {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    img {
+      width: 100%;
+    }
+  }
+
+  @media screen and (max-width: 480px) {
+    grid-template-columns: auto;
+  }
+
+  @media screen and (max-width: 912px) {
+    grid-template-columns: auto;
+  }
+
+}
