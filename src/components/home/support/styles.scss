@@ -1,0 +1,113 @@
+.support {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding-top: 5%;
+    gap: 3rem;
+
+    @media screen and (max-width: 480px) {
+        grid-template-columns: 1fr;
+    }
+
+}
+
+.supportHeadline{
+    display: flex;
+    flex-direction: column;
+    
+    h1 {
+        font-size: 1.7rem;
+        color: #2d3748;
+        line-height: 2.5rem;
+
+        b{
+            color: #0aadff;
+        }
+
+        @media screen and (max-width: 480px) {
+           font-size: 1.7rem;
+        }
+
+    }
+
+    span {
+        padding-top: 3%;
+        color: #718096;
+        font-size: 1.15rem;
+    }
+}
+
+.supportForm{
+    border: 1px solid #e0e0e0;
+    background-color: #FFF;
+    border-radius: 5px;
+    padding-left: 5%;
+    padding-right: 5%;
+    padding-bottom: 3%;
+
+    h1{
+        display: flex;
+        width: 100%;
+        align-items: center;
+        justify-content: center;
+        padding-top: 8%;
+        font-size: 1.8rem;
+
+    }
+
+    .form-groups{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 2rem;
+        padding-top: 8%;
+
+        input {
+            border: 1px solid #d4d4d4;
+            height: 3rem;
+            border-radius: 0.2rem;
+            padding-left: 5%;
+            color: gray;
+        }
+
+        @media screen and (max-width: 480px) {
+            grid-template-columns: 1fr;
+        }
+    }
+
+    .form-group {
+        display: grid;
+        grid-template-columns: 1fr;
+        padding-top: 8%;
+
+        input {
+            border: 1px solid #d4d4d4;
+            height: 3rem;
+            border-radius: 0.2rem;
+            padding-left: 5%;
+            color: gray;
+        }
+
+        textarea {
+            border: 1px solid #d4d4d4;
+            border-radius: 0.2rem;
+            color: gray;
+            padding-left: 5%;
+            padding-top: 5%;
+        }
+
+        button {
+            background-color: #0aadff;
+            color: white;
+            height: 2.7rem;
+            font-weight: bold;
+            border-radius: 0.2rem;
+            cursor: pointer;
+
+            &:hover {
+                background-color: #097fba;
+              }
+
+        }
+
+    }
+
+}
