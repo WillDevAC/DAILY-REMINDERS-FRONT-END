@@ -15,10 +15,20 @@
     display: grid;
     grid-template-columns: 1fr 1fr;
 
+    @media screen and (max-width: 480px) {
+      grid-template-columns: 1fr;
+      width: 95%;
+      height: 58%;
+    }
+
     .avatar {
       display: flex;
       align-items: center;
       justify-content: center;
+
+      @media screen and (max-width: 480px) {
+        display: none;
+      }
 
       img {
         width: 90%;
@@ -31,6 +41,12 @@
       flex-direction: column;
       padding-top: 10%;
       padding-left: 10%;
+
+      @media screen and (max-width: 480px) {
+        padding-left: 5%;
+        padding-top: 8%;
+        padding-right: 8%;
+      }
 
       span {
         padding-top: 5%;
@@ -106,6 +122,10 @@
     height: 5rem;
     gap: 2rem;
     justify-content: space-between;
+
+    @media screen and (max-width: 480px) {
+      width: 90%;
+    }
 
     img {
       width: 8%;
