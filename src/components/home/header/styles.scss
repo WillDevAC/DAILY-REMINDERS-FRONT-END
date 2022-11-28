@@ -1,0 +1,39 @@
+@import "../../../template/global.scss";
+
+._header {
+  display: flex;
+  background-color: white;
+  border-bottom: 1px solid #e0e0e0;
+  justify-content: space-between;
+  align-items: center;
+  min-height: 3.8rem;
+  padding-left: 11%;
+  padding-right: 11%;
+
+  .logo {
+    img {
+      width: 80%;
+    }
+  }
+
+  .links {
+    button {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background-color: $primary-color;
+      text-transform: uppercase;
+      color: #fff;
+      min-height: 2rem;
+      min-width: 8.5rem;
+      border-radius: 0.2rem;
+      font-size: 0.85rem;
+      font-weight: bold;
+      cursor: pointer;
+
+      &:hover {
+        background-color: #097fba;
+      }
+    }
+  }
+}
