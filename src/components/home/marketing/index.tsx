@@ -1,6 +1,6 @@
 import React from "react";
 
-import MoreInfoCard from "../more-info-card";
+import MoreInfoCard from "../card";
 
 import "./styles.scss";
 
@@ -18,13 +18,25 @@ const Marketing: React.FC = () => {
           </span>
 
           <div className="more-info-cards">
-            <MoreInfoCard />
-            <MoreInfoCard />
-            <MoreInfoCard />
+            <MoreInfoCard
+              iconName="fas fa-user-graduate"
+              title="Tarefas"
+              description="Alertas personalizados"
+            />
+            <MoreInfoCard
+              iconName="fas fa-school"
+              title="Estatisticas"
+              description="Estatistica de tarefas dentro da plataforma"
+            />
+            <MoreInfoCard
+              iconName="fas fa-building"
+              title="Bussiness"
+              description="Tem um négocio? podemos ajudar você."
+            />
           </div>
         </div>
         <div className="banner">
-          <img src="public/hero.svg" alt="@hero avatar" />
+          <img src="/public/hero.svg" alt="@hero avatar" />
         </div>
       </section>
     </>
