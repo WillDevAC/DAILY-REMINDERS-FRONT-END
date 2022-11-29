@@ -1,0 +1,149 @@
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    width: 100%;
+    flex-direction: column;
+  
+    .wrapper {
+      width: 60%;
+      height: 60%;
+      background-color: white;
+      border: 1px solid #e0e0e0;
+      border-radius: 0.2rem;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+  
+      @media screen and (max-width: 480px) {
+        grid-template-columns: 1fr;
+        width: 95%;
+        height: 58%;
+      }
+  
+      .avatar {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+  
+        @media screen and (max-width: 480px) {
+          display: none;
+        }
+  
+        img {
+          width: 90%;
+        }
+  
+      }
+  
+      .form {
+        display: flex;
+        flex-direction: column;
+        padding-top: 10%;
+        padding-left: 10%;
+  
+        @media screen and (max-width: 480px) {
+          padding-left: 5%;
+          padding-top: 8%;
+          padding-right: 8%;
+        }
+  
+        span {
+          padding-top: 5%;
+          color: #757575;
+          font-size: 1rem;
+        }
+  
+        .form-groups{
+          display: grid;
+          grid-template-columns: 1fr 1fr;
+          gap: 1rem;
+          padding-top: 5%;
+          
+          span {
+            font-size: 0.85rem;
+            display: flex;
+            padding-top: 8%;
+            cursor: pointer;
+  
+            &:hover{
+              color: #0aadff;
+            }
+  
+          }
+  
+        }
+  
+        button {
+          display: flex;
+          border: 1px solid #e8e8e8;
+          background-color: white;
+          min-height: 2.8rem;
+          align-items: center;
+          justify-content: center;
+          gap: 0.5rem;
+          cursor: pointer;
+  
+          &:hover {
+            background-color: #fafafa;
+          }
+        }
+        
+        .blue {
+          background-color: #0aadff;
+          color: white;
+          font-weight: bold;
+          border-radius: 0.2rem;
+  
+          &:hover{
+            background-color: #097fba;
+          }
+        }
+  
+        .form-group {
+          display: grid;
+          grid-template-columns: 1fr;
+          padding-top: 5%;
+  
+          input {
+            border: 1px solid #d0d0d0;
+            min-height: 3.3rem;
+            border-radius: 0.3rem;
+            padding-left: 3%;
+            color: gray;
+          }
+        }
+      }
+    }
+  
+    .wrapper_avatar {
+      display: flex;
+      width: 60%;
+      height: 5rem;
+      gap: 2rem;
+      justify-content: space-between;
+  
+      @media screen and (max-width: 480px) {
+        width: 90%;
+      }
+  
+      img {
+        width: 8%;
+        align-items: center;
+        background-color: white;
+        margin-bottom: 3%;
+      }
+  
+      p {
+        padding-top: 2.3%;
+        font-size: 0.9rem;
+        color: #474f5e;
+        cursor: pointer;
+  
+        &:hover{
+          color: #0aadff;
+        }
+      }
+    }
+  }
+  

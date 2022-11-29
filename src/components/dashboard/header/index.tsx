@@ -3,7 +3,11 @@ import { useHistory } from 'react-router-dom';
 
 import './styles.scss'
 
-const header: React.FC = () => {
+interface IProps{
+  modalOpenProfile: Function;
+}
+
+const header: React.FC<IProps> = ({ modalOpenProfile }) => {
   
   const router = useHistory();
 
@@ -14,7 +18,7 @@ const header: React.FC = () => {
         </div>
         <div className="profile">
             <i className="fa-sharp fa-solid fa-right-from-bracket" onClick={() => router.replace('/')}></i>
-            <img src="/public/user.png" alt="" />
+            <img src="/public/user.png" alt="" onClick={() => modalOpenProfile()}/>
         </div>
     </header>
   );

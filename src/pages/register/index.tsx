@@ -4,7 +4,7 @@ import { useHistory } from "react-router-dom";
 
 import "./styles.scss";
 
-const Auth: React.FC = () => {
+const Register: React.FC = () => {
 
   const router = useHistory();
 
@@ -12,24 +12,16 @@ const Auth: React.FC = () => {
     <div className="container">
       <div className="wrapper_avatar">
         <img src="/public/logo_pequena.png" alt="avatar" />
-        <p onClick={() => router.goBack()}>VOLTAR PARA HOME</p>
+        <p onClick={() => router.goBack()}>VOLTAR PARA TRÁS</p>
       </div>
       <div className="wrapper">
         <div className="form">
-          <h1>Entrar</h1>
+          <h1>Registro</h1>
           <span>
-            Já possui uma conta em nossa plataforma? Entre utilizando e-mail e
-            senha ou utilize suas redes sociais
+            Preencha os dados com atenção.
           </span>
-          <div className="form-groups">
-            <button>
-              <img src="/public/facebook.svg" />
-              Facebook
-            </button>
-            <button>
-              <img src="/public/google.svg" />
-              Google
-            </button>
+          <div className="form-group">
+            <input type="text" placeholder="Nome" />
           </div>
           <div className="form-group">
             <input type="text" placeholder="Email" />
@@ -38,8 +30,7 @@ const Auth: React.FC = () => {
             <input type="password" placeholder="Senha" />
           </div>
           <div className="form-groups">
-            <span onClick={() => router.push('/register')}>Não tem uma conta?</span>
-            <button className="blue" onClick={() => router.push('/dashboard')}>Entrar</button>
+            <button className="blue" onClick={() => router.push('/dashboard')}>Registrar-se</button>
           </div>
         </div>
         <div className="avatar">
@@ -53,4 +44,4 @@ const Auth: React.FC = () => {
   );
 };
 
-export default Auth;
+export default Register;

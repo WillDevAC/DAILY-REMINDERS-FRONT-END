@@ -20,6 +20,8 @@
     height: auto;
     padding: 1rem;
     border-radius: 1rem;
+    border-top: 0.5rem solid #f4f4f4;
+    border-bottom: 0.5rem solid #f4f4f4;
 
     @media screen and (max-width: 480px) {
         width: 95%;
