@@ -1,0 +1,88 @@
+.tasks{
+    margin-top: 3%;
+    height: 81%;
+    overflow-y: auto;
+
+    @media screen and (max-width: 480px) {
+        height: 22rem;
+    }
+}
+
+.statisticsContainer{
+    display: flex;
+    flex-direction: column;
+    height: 55%;
+    border: 1px solid #e3e3e3;
+    border-radius: 0.2rem;
+    gap: 5rem;
+
+    @media screen and (max-width: 480px) {
+        height: 100%;
+    }
+
+    h2 {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        padding-top: 8%;
+        font-size: 1.5rem;
+    }
+
+    .chart{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        img{
+            width: 50%;
+            padding-top: 10%;
+        }
+    }
+
+    .upgrade_plan{
+        display: flex;
+        background-color: white;
+        border: 1px solid #e3e3e3;
+        border-radius: 0.2rem;
+        flex-direction: column;
+        align-items: center;
+
+        img{
+            padding-top: 5%;
+            padding-bottom: 5%;
+            width: 60%;
+        }
+
+        h3{
+            b{
+                color: goldenrod;
+            }
+        }
+
+        span {
+            padding-top: 3%;
+            color: gray;
+            font-size: 0.9rem;
+        }
+        
+        button {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 80%;
+            margin-top: 7%;
+            margin-bottom: 5%;
+            background-color: #0aafff;
+            color: white;
+            height: 2.5rem;
+            font-weight: bold;
+            border-radius: 0.2rem;
+            cursor: pointer;
+
+            &:hover{
+                background-color: #097fba;
+            }
+        }
+    }
+}
