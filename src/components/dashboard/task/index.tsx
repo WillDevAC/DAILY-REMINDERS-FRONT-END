@@ -47,6 +47,12 @@ const task: React.FC<IProps> = ({
               <span>Finalizada</span>
             </div>
           )}
+
+          {badge_type == "agended" && (
+            <div className="task-finalized">
+              <span>Agendada</span>
+            </div>
+          )}
         </div>
       </div>
       <span>{description}</span>

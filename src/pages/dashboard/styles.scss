@@ -1,88 +1,183 @@
-.tasks{
-    margin-top: 3%;
-    height: 81%;
-    overflow-y: auto;
+.tasks {
+  margin-top: 3%;
+  height: 81%;
+  overflow-y: auto;
 
-    @media screen and (max-width: 480px) {
-        height: 22rem;
-    }
+  @media screen and (max-width: 480px) {
+    height: 22rem;
+  }
 }
 
-.statisticsContainer{
+.statisticsContainer {
+  display: flex;
+  flex-direction: column;
+  height: 55%;
+  border: 1px solid #e3e3e3;
+  border-radius: 0.2rem;
+  gap: 5rem;
+
+  @media screen and (max-width: 480px) {
+    height: 100%;
+  }
+
+  h2 {
     display: flex;
-    flex-direction: column;
-    height: 55%;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    padding-top: 8%;
+    font-size: 1.5rem;
+  }
+
+  .chart {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    img {
+      width: 50%;
+      padding-top: 10%;
+    }
+  }
+
+  .upgrade_plan {
+    display: flex;
+    background-color: white;
     border: 1px solid #e3e3e3;
     border-radius: 0.2rem;
-    gap: 5rem;
+    flex-direction: column;
+    align-items: center;
 
-    @media screen and (max-width: 480px) {
-        height: 100%;
+    img {
+      padding-top: 5%;
+      padding-bottom: 5%;
+      width: 60%;
     }
 
-    h2 {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        width: 100%;
-        padding-top: 8%;
-        font-size: 1.5rem;
+    h3 {
+      b {
+        color: goldenrod;
+      }
     }
 
-    .chart{
-        display: flex;
-        align-items: center;
-        justify-content: center;
-
-        img{
-            width: 50%;
-            padding-top: 10%;
-        }
+    span {
+      padding-top: 3%;
+      color: gray;
+      font-size: 0.9rem;
     }
 
-    .upgrade_plan{
-        display: flex;
-        background-color: white;
-        border: 1px solid #e3e3e3;
-        border-radius: 0.2rem;
-        flex-direction: column;
-        align-items: center;
+    button {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 80%;
+      margin-top: 7%;
+      margin-bottom: 5%;
+      background-color: #0aafff;
+      color: white;
+      height: 2.5rem;
+      font-weight: bold;
+      border-radius: 0.2rem;
+      cursor: pointer;
 
-        img{
-            padding-top: 5%;
-            padding-bottom: 5%;
-            width: 60%;
-        }
-
-        h3{
-            b{
-                color: goldenrod;
-            }
-        }
-
-        span {
-            padding-top: 3%;
-            color: gray;
-            font-size: 0.9rem;
-        }
-        
-        button {
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            width: 80%;
-            margin-top: 7%;
-            margin-bottom: 5%;
-            background-color: #0aafff;
-            color: white;
-            height: 2.5rem;
-            font-weight: bold;
-            border-radius: 0.2rem;
-            cursor: pointer;
-
-            &:hover{
-                background-color: #097fba;
-            }
-        }
+      &:hover {
+        background-color: #097fba;
+      }
     }
+  }
+}
+
+.modalwrapper {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+
+  .modal-headerr {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #f7c13e;
+    height: 3.5rem;
+    color: black;
+    font-weight: bold;
+    border-radius: 0.2rem;
+    .groupform {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+    }
+  }
+}
+
+.groupforminput {
+  display: flex;
+  flex-direction: column;
+}
+
+.groupform {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding-top: 8%;
+  gap: 0.8rem;
+
+  label {
+    padding-bottom: 1rem;
+  }
+
+  input {
+    border: 1px solid #bebfc0;
+    min-height: 2.5rem;
+    border-radius: 0.2rem;
+    color: gray;
+    padding-left: 2%;
+  }
+}
+
+.inputgroupp {
+  display: flex;
+  flex-direction: column;
+  padding-top: 5%;
+  gap: 0.8rem;
+
+  input {
+    border: 1px solid #bebfc0;
+    min-height: 2.5rem;
+    border-radius: 0.2rem;
+    color: gray;
+    padding-left: 2%;
+  }
+
+  textarea {
+    border: 1px solid #d4d4d4;
+    border-radius: 0.2rem;
+    color: gray;
+    padding-left: 2%;
+    padding-top: 5%;
+  }
+
+  button {
+    background-color: #0aadff;
+    color: white;
+    height: 2.7rem;
+    font-weight: bold;
+    border-radius: 0.2rem;
+    cursor: pointer;
+
+    &:hover {
+      background-color: #097fba;
+    }
+  }
+}
+
+fieldset {
+  margin-top: 5%;
+  padding-top: 5%;
+  padding-bottom: 5%;
+  padding-left: 5%;
+  border: 1px solid #d4d4d4;
+  font-size: 1rem;
+
+  label {
+    font-size: 1rem;
+    padding-left: 3%;
+  }
 }

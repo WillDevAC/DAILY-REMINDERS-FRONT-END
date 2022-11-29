@@ -1,12 +1,16 @@
-import React from "react";
+import React, { useState } from "react";
 
 import Header from "../../components/dashboard/header";
 import Task from "../../components/dashboard/task";
 import Footer from "../../components/home/footer";
+import Modal from "../../components/modals";
+import useModal from "../../hooks/useModal";
 
 import "./styles.scss";
 
 const Dashboard: React.FC = () => {
+  const { isOpen, toggle } = useModal();
+
   return (
     <>
       <Header />
@@ -19,7 +23,7 @@ const Dashboard: React.FC = () => {
               <input type="search" placeholder="Pesquisar..." />
             </div>
           </div>
-          <div className="NewTask">
+          <div className="NewTask" onClick={toggle}>
             Clique aqui para adicionar uma nova tarefa
           </div>
           <div className="tasks">
@@ -45,7 +49,7 @@ const Dashboard: React.FC = () => {
               date="00/00/0000 - 00/00/0000"
             />
             <Task
-              badge_type="finalized"
+              badge_type="agended"
               title="Tarefa 04"
               description="Falar com o jerabina."
               date="00/00/0000 - 00/00/0000"
@@ -58,14 +62,54 @@ const Dashboard: React.FC = () => {
             <img src="/public/chart.png" alt="Gráfico pizza" />
           </div>
           <div className="upgrade_plan">
-            <img src="/public/pro.png" alt="Torne-se PRO" title="Torne-se PRO" />
-            <h3>Aproveite e seja <b>PRO</b></h3>
+            <img
+              src="/public/pro.png"
+              alt="Torne-se PRO"
+              title="Torne-se PRO"
+            />
+            <h3>
+              Aproveite e seja <b>PRO</b>
+            </h3>
             <span>Quer ter funcionalidades extras? assine nosso plano.</span>
             <button>SABER MAIS</button>
           </div>
         </div>
       </main>
-      <Footer/>
+      <Footer />
+      <Modal isOpen={isOpen} toggle={toggle}>
+        <div className="modalwrapper">
+          <div className="inputgroupp">
+            <label>Titulo da tarefa: </label>
+            <input type="text" />
+          </div>
+          <div className="groupform">
+            <div className="groupforminput">
+              <label>Data de inicio: </label>
+              <input type="datetime-local" />
+            </div>
+            <div className="groupforminput">
+              <label>Data de termino: </label>
+              <input type="datetime-local" />
+            </div>
+          </div>
+          <div className="inputgroupp">
+            <label>Descrição: </label>
+            <textarea rows={8} cols={8} />
+          </div>
+
+          <fieldset>
+            <legend>Preferências:</legend>
+
+            <div>
+              <input type="checkbox" id="scales" name="scales" />
+              <label htmlFor="scales">Receber notificações de tarefas</label>
+            </div>
+          </fieldset>
+          <div className="inputgroupp">
+            <button>CADASTRAR TAREFA</button>
+          </div>
+        </div>
+      </Modal>
     </>
   );
 };

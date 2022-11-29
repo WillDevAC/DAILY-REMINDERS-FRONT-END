@@ -1,0 +1,27 @@
+.modal-overlay {
+    z-index: 9999;
+    width: 98.9vw;
+    position: fixed;
+    height: 100%;
+    top: 0;
+    background: rgba(0, 0, 0, 0.7);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    @media screen and (max-width: 480px) {
+        width: 100vw;
+    }
+  }
+  
+  .modal-box {
+    display: block;
+    background: white;
+    width: 35%;
+    height: auto;
+    padding: 1rem;
+    border-radius: 1rem;
+
+    @media screen and (max-width: 480px) {
+        width: 95%;
+    }
+  }
