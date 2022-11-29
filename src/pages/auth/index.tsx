@@ -5,6 +5,7 @@ import { useHistory } from "react-router-dom";
 import "./styles.scss";
 
 const Auth: React.FC = () => {
+
   const router = useHistory();
 
   return (
@@ -38,7 +39,7 @@ const Auth: React.FC = () => {
           </div>
           <div className="form-groups">
             <span>Não tem uma conta?</span>
-            <button className="blue">Entrar</button>
+            <button className="blue" onClick={() => router.push('/dashboard')}>Entrar</button>
           </div>
         </div>
         <div className="avatar">
